@@ -1,3 +1,35 @@
+body {
+    font-family: "Sono", "Kosugi Maru", sans-serif;
+    font-size: var(--clampText);
+    color: #333;
+    text-shadow: var(--textShadowWhite);
+}
+
+header {
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.headerBox {
+    width: fit-content;
+    margin-inline: auto;
+    padding: 1rem;
+    background-color: antiquewhite;
+    border-radius: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.headerBox li {
+    font-size: 0.875rem;
+}
+
 #clock {
     font-size: 3rem;
 }
@@ -53,10 +85,10 @@
 
 #clock::before {
     content: "chime_OFF";
-    font-size: 0.5rem;
+    font-size: 1rem;
     font-family: "Barlow Condensed", sans-serif;
     position: absolute;
-    top: 5px;
+    top: 1px;
     left: 1rem;
     transition: all 0.3s;
 }
