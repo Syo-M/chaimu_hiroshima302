@@ -17,18 +17,38 @@
     <body>
         <header>
             <h1>授業開始・休憩アナウンス用チャイム</h1>
-            <ul class="headerBox">
-                <li>右下のデジタル時計をクリックするとチャイムがONになります。</li>
-                <li>ONにしたまま放置していれば、授業開始・授業終わりに自動でチャイムが鳴ります。</li>
-                <li>Chromeでの使用の際、このチャイムを起動した後、タブをいくつか開いていると、</li>
-                <li>チャイム機能が停止する（メモリリセットされる）ので、単独のウィンドウで開くのがおすすめです。</li>
-            </ul>
         </header>
 
-        <div class="timer" id="chime_button">
-            <input id="toggle" class="toggle_input" type="checkbox" />
-            <p id="clock"></p>
+        <div class="appWrapper">
+            <main>
+                <section>
+                    <h2 class="timeMassage">チャイム停止中</h2>
+                </section>
+
+                <div class="timer">
+                    <p id="clock"></p>
+                </div>
+
+                <button id="chime_button">チャイム開始</button>
+
+                <ul class="headerBox">
+                    <li>チャイム開始ボタンをクリックするとアプリが起動します</li>
+                    <li>ONにしたまま放置していれば、授業開始・授業終わりに自動でチャイムが鳴ります。</li>
+                    <li>
+                        このチャイムを起動した後、同じブラウザ画面でタブを開いているとチャイム機能が停止しやすいので、新規ウィンドウでこのアプリを開くのがおすすめです。
+                    </li>
+                </ul>
+            </main>
+
+            <footer>
+                <p><small>&copy;2025 SyoMotoyama.</small></p>
+                <p>
+                    <a href="contact.html" target="_blank" rel="noopener noreferrer"
+                        >アプリケーションに関するお問い合わせはこちら</a
+                    >
+                </p>
+            </footer>
         </div>
-        <script src="js/schooltimer_v3.js"></script>
+        <script src="js/updated-chime-toggle.js"></script>
     </body>
 </html>

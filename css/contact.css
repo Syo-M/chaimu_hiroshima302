@@ -1,0 +1,53 @@
+body {
+    background-color: whitesmoke;
+    padding-top: 1rem;
+    font-family: "Sono", "Kosugi Maru", sans-serif;
+    font-size: var(--clampText);
+    color: #333;
+    text-shadow: var(--textShadowWhite);
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #333;
+    display: block;
+    width: 100%;
+    height: 2rem;
+    background-color: white;
+}
+
+main {
+    max-width: 800px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+form button {
+    width: fit-content;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
